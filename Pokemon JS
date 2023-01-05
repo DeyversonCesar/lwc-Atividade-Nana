@@ -1,0 +1,10 @@
+import { LightningElement } from "lwc";
+
+export default class App extends LightningElement {
+  //criar variaveis de atributos
+visible = true;
+
+        handleClick() {
+          this.visible = !this.visible;
+        }
+}
