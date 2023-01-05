@@ -1,0 +1,33 @@
+import { LightningElement } from 'lwc';
+
+export default class Atividade extends LightningElement {
+ //criar variaveis de atributos
+
+    empresa = "Fender";
+    cnpj = " 122879267191111";
+    endereco = " Rua João Felipe";
+
+    
+   
+    produto = "Guitarra";
+    descricao = " Guitarra Fender Stratocast ";
+    preco = "R$10.456";
+    
+  
+    promocao = "Compre uma guitarra fender e ganhe seu Kit GuitarRock!!!";
+    oferta1 = " kit GuitarRock : (Cabos,palhetas,afinador e um bag)";
+    oferta2 ="Kit GuitarRock2 : (Cabos,palhetas,afinador e case de luxo)";
+    
+   
+   
+  
+   visible1 =true;
+  
+  //usu de variavel dentro do metodo da função
+          handleClick() {
+            this.visible1 =!this.visible1;
+  
+     
+          }
+          }
+            
