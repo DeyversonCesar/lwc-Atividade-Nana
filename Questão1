@@ -1,0 +1,40 @@
+
+    <template>
+        <lightning-card title="1 - Crie um componente LWC que Renderize as seguintes propriedades vindas do JS:
+     ">
+    
+    
+            <div class="slds-box">
+                <lightning-avatar src="/bad/image/url.jpg" initials="" fallback-icon-name="standard:account"
+                    alternative-text="Salesforce" class="slds-m-right_small"></lightning-avatar>
+    
+                <p>Empresa:{empresa} </p>
+                <p>CNPJ:{cnpj} </p>
+                <p>Endereço:{endereco} </p>
+            </div>
+            <div class="slds-box" if:true={visible1} >
+                <lightning-avatar src="/bad/image/url.jpg" initials="" fallback-icon-name="custom:custom92"
+                    alternative-text="Wilson Enterprises" class="slds-m-right_small"></lightning-avatar>
+    
+                <p>Produto:{produto} </p>
+                <p>Descrição:{descricao} </p>
+                <p>Preço: R$ `{preco}</p>
+            </div>
+            <div class="slds-box" if:true={visible1}>
+                <h1 class="slds-text-heading_large">Promoção</h1>
+                <h2>{promocao}</h2>
+                <br> 
+                <br>
+                <br>
+
+
+                <p>Oferta1:{oferta1} </p>
+                <p>Oferta2:{oferta2} </p>
+            </div>
+            <lightning-button variant="brand" label="Clique aqui" title="Alterar visible" onclick={handleClick}
+			class="slds-m-left_x-small"></lightning-button>
+        </lightning-card>
+    
+    
+    
+</template>
